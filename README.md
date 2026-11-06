@@ -1,4 +1,4 @@
-# Kibotos 企业客户文档站
+# Kibotos 客户文档站
 
 面向企业客户的 Kibotos 文档，用 [VitePress](https://vitepress.dev/)（基于 Vite）构建。内容依据 Kibotos 源码仓库 v0.3.0 编写，覆盖产品概览、快速开始、E2B 兼容 API、原生 API、`kibo` 命令行、Template、安全与参考，**不包含自部署内容**。
 
