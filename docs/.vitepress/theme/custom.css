@@ -1,0 +1,64 @@
+/* Brand */
+:root {
+  --vp-c-brand-1: #3b5bdb;
+  --vp-c-brand-2: #4c6ef5;
+  --vp-c-brand-3: #5c7cfa;
+  --vp-c-brand-soft: rgba(76, 110, 245, 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #3b5bdb 20%, #15aabf 80%);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, rgba(76, 110, 245, 0.35) 30%, rgba(21, 170, 191, 0.35));
+  --vp-home-hero-image-filter: blur(56px);
+
+  --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+}
+
+.dark {
+  --vp-c-brand-1: #91a7ff;
+  --vp-c-brand-2: #748ffc;
+  --vp-c-brand-3: #5c7cfa;
+  --vp-c-brand-soft: rgba(116, 143, 252, 0.16);
+}
+
+@media (min-width: 640px) {
+  :root { --vp-home-hero-image-filter: blur(64px); }
+}
+
+/* Reference tables: the first column holds field, flag and state names, which
+   stay on one line; long identifiers in the other columns may break so a
+   description column does not force a horizontal scroll. */
+.vp-doc td:first-child code {
+  white-space: nowrap;
+}
+
+.vp-doc td:not(:first-child) code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.vp-doc th {
+  white-space: nowrap;
+}
+
+/* Fill the content width on wide screens; narrow screens keep VitePress's
+   scrollable block table. */
+@media (min-width: 960px) {
+  .vp-doc table {
+    display: table;
+    width: 100%;
+  }
+}
+
+/* Role cards on the home page */
+.VPFeature .title {
+  font-size: 16px;
+}
+
+/* Mermaid diagrams: centre them and keep them inside the content column. */
+.vp-doc .mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+  overflow-x: auto;
+}
